@@ -12,7 +12,7 @@ namespace Lucene {
 Future::~Future() {
 }
 
-const int32_t ThreadPool::THREADPOOL_SIZE = 5;
+const int32_t ThreadPool::THREADPOOL_SIZE = 16;
 
 ThreadPool::ThreadPool() {
     work.reset(new boost::asio::io_service::work(io_service));
